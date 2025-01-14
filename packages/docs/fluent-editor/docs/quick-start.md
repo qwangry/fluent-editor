@@ -12,6 +12,7 @@ npm i @opentiny/fluent-editor
 <div id="editor">
   <p>Hello Fluent Editor!</p>
 </div>
+
 ```
 
 引入样式：
@@ -27,7 +28,7 @@ import FluentEditor from '@opentiny/fluent-editor'
 
 // 执行初始化时，请确保能获取到 DOM 元素，如果是在 Vue 项目中，需要在 onMounted 事件中执行。
 const editor = new FluentEditor('#editor', {
-  theme: 'snow',
+  theme: 'bubble',
 })
 ```
 
@@ -48,6 +49,7 @@ const editor = new FluentEditor('#editor', {
   <!-- 引入 @opentiny/fluent-editor 样式 -->
   <link rel="stylesheet" href="https://unpkg.com/@opentiny/fluent-editor@3.18.3/style.css" />
 </head>
+
 ```
 
 接着就可以导入 Fluent Editor，并通过 `new FluentEditor(selector, options)` 进行初始化。
@@ -61,8 +63,9 @@ const editor = new FluentEditor('#editor', {
 
     // 初始化 Fluent Editor 富文本编辑器
     const editor = new FluentEditor('#editor', {
-      theme: 'snow',
+      theme: 'bubble',
     })
   </script>
 </body>
+
 ```

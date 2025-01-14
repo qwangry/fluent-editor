@@ -46,7 +46,7 @@ onMounted(() => {
   import('@opentiny/fluent-editor').then(({ default: FluentEditor, generateToolbarTip }) => {
     FluentEditor.register({ 'modules/toolbar-tip': generateToolbarTip(QuillToolbarTip) }, true)
     editor = new FluentEditor(editorRef.value, {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         'toolbar': TOOLBAR_CONFIG,
         'file': true,

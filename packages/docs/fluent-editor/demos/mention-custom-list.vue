@@ -32,7 +32,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor('#editor-mention-custom-list', {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         mention: {
           containerClass: 'ql-mention-list-container__custom-list',

@@ -9,7 +9,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor('#editor-set-content-html', {
-      theme: 'snow',
+      theme: 'bubble',
     })
 
     const html = '<p>Hello <strong>Fluent Editor</strong>!</p>'

@@ -2,6 +2,7 @@ import Quill from 'quill'
 import { isNullOrUndefined } from '../../config/editor.utils'
 
 const SnowTheme = Quill.imports['themes/snow']
+const BubbleTheme = Quill.imports['themes/bubble']
 
 let optionsCounter = 0
 
@@ -313,6 +314,7 @@ const HEADERS = ['1', '2', '3', false]
 const SIZES = ['small', false, 'large', 'huge']
 
 SnowTheme.prototype.buildPickers = function (selects, icons) {
+  console.log('SnowTheme buildPickers', this, this.pickers, selects, icons, SnowTheme.prototype)
   this.pickers = Array.from(selects).map((select: any) => {
     if (select.classList.contains('ql-align')) {
       if (isNullOrUndefined(select.querySelector('option'))) {
@@ -355,6 +357,8 @@ SnowTheme.prototype.buildPickers = function (selects, icons) {
   }
   this.quill.on(Quill.events.EDITOR_CHANGE, update)
 }
+
+// BubbleTheme.prototype.buildPickers = SnowTheme.prototype.buildPickers
 
 function fillSelect(select, values, defaultValue = false) {
   values.forEach((value) => {

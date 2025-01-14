@@ -60,7 +60,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor('#editor-get-content-delta', {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         'toolbar': TOOLBAR_CONFIG,
         'syntax': { hljs },
@@ -126,8 +126,5 @@ onMounted(() => {
   </div>
   <br>
   Delta 内容：
-  <div
-    ref="articleRef"
-    class="article ql-editor"
-  />
+  <div ref="articleRef" class="article ql-editor" />
 </template>

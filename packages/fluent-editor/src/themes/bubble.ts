@@ -7,9 +7,9 @@ import { FormatPainter } from '../tools/format-painter'
 import { fullscreenHandler } from '../tools/fullscreen'
 import { Screenshot } from '../tools/screenshot'
 
-const SnowTheme = FluentEditor.imports['themes/snow'] as typeof Module
-console.log('SnowTheme...', SnowTheme, (SnowTheme.DEFAULTS as Record<string, any>).modules.toolbar.handlers)
-SnowTheme.DEFAULTS = {
+const BubbleTheme = FluentEditor.import('themes/bubble')
+console.log('BubbleTheme...', BubbleTheme, (BubbleTheme.DEFAULTS as Record<string, any>).modules.toolbar.handlers)
+BubbleTheme.DEFAULTS = {
   modules: {
     'i18n': true,
     'keyboard': {
@@ -19,7 +19,7 @@ SnowTheme.DEFAULTS = {
     },
     'toolbar': {
       handlers: {
-        ...(SnowTheme.DEFAULTS as Record<string, any>).modules.toolbar.handlers,
+        ...(BubbleTheme.DEFAULTS as Record<string, any>).modules.toolbar.handlers,
         'formula': function () {
           if (!this.quill.isEnabled()) return
           const mathlive = this.quill.getModule('mathlive')
@@ -120,4 +120,4 @@ SnowTheme.DEFAULTS = {
   },
 }
 
-export default SnowTheme
+export default BubbleTheme

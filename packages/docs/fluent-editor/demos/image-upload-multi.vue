@@ -17,7 +17,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor('#editor-upload-multi', {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         toolbar: TOOLBAR_CONFIG,
       },

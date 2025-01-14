@@ -22,7 +22,7 @@ onMounted(() => {
     const { imageFileToUrl } = module
 
     editor = new FluentEditor('#editor-image-upload-before-upload', {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         toolbar: TOOLBAR_CONFIG,
       },

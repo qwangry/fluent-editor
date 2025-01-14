@@ -64,6 +64,29 @@ $arrowWidth: 5px; // 下拉框箭头宽度
       }
     }
 
+    &.ql-bubble {
+      border-radius: 25px;
+      background-color: getCssVar(editor-bg-color);
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ql-active,
+      .ql-picker-label.ql-active,
+      .ql-picker-label:hover,
+      .ql-picker-item.ql-selected,
+      .ql-picker-item:hover,
+      button.ql-active,
+      button:hover {
+        color: #5e7ce0;
+
+        .icon-triangle-down {
+          border-top-color: #5e7ce0;
+        }
+      }
+    }
+
     .ql-picker-item:focus,
     .ql-picker-options:focus {
       outline: none;

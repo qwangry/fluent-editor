@@ -9,7 +9,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor('#editor-set-content-delta', {
-      theme: 'snow',
+      theme: 'bubble',
     })
 
     const delta = { ops: [{ insert: 'Hello ' }, { attributes: { bold: true }, insert: 'Fluent Editor' }, { insert: '!\n' }] }

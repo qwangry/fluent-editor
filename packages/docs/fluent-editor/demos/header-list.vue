@@ -16,7 +16,7 @@ onMounted(() => {
       FluentEditor.register({ 'modules/header-list': HeaderList }, true)
 
       editor = new FluentEditor(editorRef.value, {
-        theme: 'snow',
+        theme: 'bubble',
         modules: {
           'toolbar': {
             container: [

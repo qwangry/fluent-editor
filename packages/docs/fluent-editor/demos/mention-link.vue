@@ -31,7 +31,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor(editorRef.value, {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         mention: {
           itemKey: 'cn',

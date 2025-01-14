@@ -37,7 +37,7 @@ onMounted(() => {
     FluentEditor.register('formats/bad', BadStyle)
 
     editor = new FluentEditor('#editor-add-toolbar-item', {
-      theme: 'snow',
+      theme: 'bubble',
       lang: 'zh-CN',
       modules: {
         toolbar: {

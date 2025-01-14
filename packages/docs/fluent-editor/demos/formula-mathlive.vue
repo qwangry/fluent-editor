@@ -21,7 +21,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     mathliveEditor = new FluentEditor('#mathliveEditor', {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         toolbar: {
           container: TOOLBAR_CONFIG,

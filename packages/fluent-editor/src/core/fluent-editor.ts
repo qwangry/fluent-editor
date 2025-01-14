@@ -14,6 +14,7 @@ class FluentEditor extends Quill {
   }
 
   constructor(container: HTMLElement | string, options: IEditorConfig = {}) {
+    console.log('FluentEditor...', container, options)
     super(container, options)
   }
 

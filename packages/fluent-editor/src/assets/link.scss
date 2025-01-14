@@ -22,6 +22,11 @@
         transform: translateY(-10px);
       }
 
+      &.ql-bubble {
+        // border: none;
+        background-color: #adb0b8;
+      }
+
       &.ql-editing {
         input[type='text'] {
           display: inline-block;

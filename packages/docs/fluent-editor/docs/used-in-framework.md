@@ -19,7 +19,7 @@ import { onMounted } from 'vue'
 
 onMounted(() => {
   new FluentEditor('#editor', {
-    theme: 'snow',
+    theme: 'bubble',
   })
 })
 </script>
@@ -56,7 +56,7 @@ function App() {
   useEffect(() => {
     if (!editorNode.current) {
       editorNode.current = new FluentEditor('#editor', {
-        theme: 'snow',
+        theme: 'bubble',
       })
     }
   }, [])
@@ -85,6 +85,7 @@ npm i @opentiny/fluent-editor
 </main>
 
 <router-outlet />
+
 ```
 
 在 `src/app/app.component.ts` 文件中写入以下代码：
@@ -106,7 +107,7 @@ export class AppComponent {
 
   ngAfterViewInit() {
     new FluentEditor('#editor', {
-      theme: 'snow',
+      theme: 'bubble',
     })
   }
 }

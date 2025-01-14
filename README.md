@@ -35,6 +35,7 @@ Write html：
 <div id="editor">
   <p>Hello Fluent Editor!</p>
 </div>
+
 ```
 
 Import style:
@@ -49,7 +50,7 @@ Initialize the Fluent Editor editor:
 import FluentEditor from '@opentiny/fluent-editor'
 
 const editor = new FluentEditor('#editor', {
-  theme: 'snow',
+  theme: 'bubble',
 })
 ```
 

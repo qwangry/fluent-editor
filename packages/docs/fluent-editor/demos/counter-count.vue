@@ -9,7 +9,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor('#editor-counter-count', {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         counter: {
           count: 2000,

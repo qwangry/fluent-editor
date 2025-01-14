@@ -35,6 +35,7 @@ npm i @opentiny/fluent-editor
 <div id="editor">
   <p>Hello Fluent Editor!</p>
 </div>
+
 ```
 
 引入样式：
@@ -49,7 +50,7 @@ npm i @opentiny/fluent-editor
 import FluentEditor from '@opentiny/fluent-editor'
 
 const editor = new FluentEditor('#editor', {
-  theme: 'snow',
+  theme: 'bubble',
 })
 ```
 

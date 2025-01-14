@@ -19,7 +19,7 @@ onMounted(() => {
     const FluentEditor = module.default
 
     editor = new FluentEditor(editorRef.value, {
-      theme: 'snow',
+      theme: 'bubble',
       langText: {
         'sub-title-bg-color': '主题色1',
       },

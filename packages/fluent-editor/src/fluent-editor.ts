@@ -19,6 +19,7 @@ import Mention from './modules/mention/Mention' // @提醒
 import Syntax from './modules/syntax' // 代码块高亮
 import BetterTable from './modules/table/better-table' // 表格
 import Toolbar from './modules/toolbar' // 工具栏
+import BubbleTheme from './themes/bubble'
 // import QuickMenu from './modules/quick-menu' // 快捷菜单
 import SnowTheme from './themes/snow'
 import Icons from './ui/icons'
@@ -55,6 +56,7 @@ FluentEditor.register(
     'modules/better-table': BetterTable,
 
     'themes/snow': SnowTheme,
+    'themes/bubble': BubbleTheme,
 
     'ui/icons': Icons,
   },

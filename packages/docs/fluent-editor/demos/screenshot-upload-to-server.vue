@@ -19,7 +19,7 @@ onMounted(() => {
     const FluentEditor = module.default
     if (!editorRef.value) return
     editor = new FluentEditor(editorRef.value, {
-      theme: 'snow',
+      theme: 'bubble',
       modules: {
         toolbar: TOOLBAR_CONFIG,
       },

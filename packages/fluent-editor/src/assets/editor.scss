@@ -9,6 +9,10 @@
     background-color: getCssVar(editor-bg-color);
   }
 
+  .ql-container.ql-bubble {
+    background-color: getCssVar(editor-bg-color);
+  }
+
   .ql-editor {
     padding-bottom: 33px;
     font-size: $defaultFontSize;

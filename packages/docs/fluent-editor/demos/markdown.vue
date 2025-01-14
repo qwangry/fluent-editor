@@ -14,7 +14,7 @@ onMounted(() => {
       FluentEditor.register('modules/markdownShortcuts', MarkdownShortcuts)
 
       editor = new FluentEditor('#editor', {
-        theme: 'snow',
+        theme: 'bubble',
         modules: {
           markdownShortcuts: true,
         },
